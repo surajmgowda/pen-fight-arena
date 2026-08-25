@@ -41,10 +41,6 @@ function step(r,dt){
    const sp=Math.hypot(p.vx,p.vy);
    if(sp){const ns=Math.max(0,sp-55*h),q=ns/sp;p.vx*=q;p.vy*=q}
    p.x+=p.vx*h;p.y+=p.vy*h;p.angle+=0;
-   if(p.x<80){p.x=80;p.vx=Math.abs(p.vx)*.7}
-   if(p.x>920){p.x=920;p.vx=-Math.abs(p.vx)*.7}
-   if(p.y<80){p.y=80;p.vy=Math.abs(p.vy)*.7}
-   if(p.y>620){p.y=620;p.vy=-Math.abs(p.vy)*.7}
   }
   const a=g.players.filter(p=>p.alive&&!p.out);
   for(let i=0;i<a.length;i++)for(let j=i+1;j<a.length;j++){
