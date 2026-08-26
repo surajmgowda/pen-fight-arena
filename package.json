@@ -1,0 +1,13 @@
+{
+  "name": "pen-fight-arena-online",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Pen Fight Arena multiplayer lobby/server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
